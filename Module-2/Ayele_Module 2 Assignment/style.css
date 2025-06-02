@@ -1,0 +1,47 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #eef2f7;
+    margin: 0;
+    padding: 20px;
+}
+
+.wrapper {
+    background-color: #fff;
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2d3a4b;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #2d3a4b;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
