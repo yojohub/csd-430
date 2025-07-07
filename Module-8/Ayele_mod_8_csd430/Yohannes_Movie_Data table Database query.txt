@@ -1,0 +1,29 @@
+Show databases;
+use csd430;
+show tables;
+drop table yohannes_movies_data;
+CREATE TABLE yohannes_movies_data (
+    movie_id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(100),
+    genre VARCHAR(50),
+    release_year INT,
+    rating DECIMAL(3,1),
+    director VARCHAR(100)
+);
+
+
+INSERT INTO yohannes_movies_data (title, genre, release_year, rating, director)
+VALUES 
+('Inception', 'Sci-Fi', 2010, 8.8, 'Christopher Nolan'),
+('The Matrix', 'Action', 1999, 8.7, 'Lana Wachowski'),
+('Parasite', 'Thriller', 2019, 8.6, 'Bong Joon-ho'),
+('Titanic', 'Drama', 1997, 7.8, 'James Cameron'),
+('Shrek', 'Animation', 2001, 7.9, 'Andrew Adamson'),
+('Interstellar', 'Sci-Fi', 2014, 8.6, 'Christopher Nolan'),
+('The Godfather', 'Crime', 1972, 9.2, 'Francis Ford Coppola'),
+('Forrest Gump', 'Drama', 1994, 8.8, 'Robert Zemeckis'),
+('Toy Story', 'Animation', 1995, 8.3, 'John Lasseter'),
+('Avengers: Endgame', 'Action', 2019, 8.4, 'Anthony Russo');
+
+
+select * from yohannes_movies_data
